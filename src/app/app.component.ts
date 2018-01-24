@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  menuVisivel = false;
+  menuVisivel = true;
   dados = {titulo: '', conteudo: ''};
+  lista = [];
 
   alternarMenu(){
     if(this.menuVisivel){
@@ -16,5 +17,11 @@ export class AppComponent {
     }else{
       this.menuVisivel = true;
     }
+  }
+
+  inserir(){
+    this.lista.push(this.dados);
+    this.dados = {titulo: '', conteudo: ''};
+    console.log(this.lista);
   }
 }

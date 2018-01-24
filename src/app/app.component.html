@@ -10,8 +10,11 @@
     <div class="form-group">
         <input [(ngModel)]="dados.conteudo" class="form-control" type="text" name="conteudo" placeholder="Conteúdo">
     </div>
-    {{dados.titulo}}
-    {{dados.conteudo}}
-    <button class="btn btn-block btn-success">Salvar</button>
+
+    <button (click)="inserir()" class="btn btn-block btn-success">Salvar</button>
   </form>
 </section>
+
+<div class="quadro">
+  <app-card *ngFor="let card of lista" [dadosCard]="card"></app-card>
+</div>

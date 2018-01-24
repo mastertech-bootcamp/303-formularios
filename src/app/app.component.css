@@ -8,6 +8,7 @@ section{
     height: 100vh;
     transform: translateX(-85%);
     transition: 1s;
+    position: absolute;
 }
 
 section.ativa{
@@ -25,4 +26,11 @@ form{
     top: 20px;
     right: 15px;
     cursor: pointer;
+}
+
+.quadro{
+    padding-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
