@@ -1,0 +1,28 @@
+h1{
+    color: white;
+    padding: 10px;
+}
+section{
+    width: 400px;
+    background-color: #42a4f4;
+    height: 100vh;
+    transform: translateX(-85%);
+    transition: 1s;
+}
+
+section.ativa{
+    transform: translateX(0);
+}
+
+form{
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.menu{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+}
